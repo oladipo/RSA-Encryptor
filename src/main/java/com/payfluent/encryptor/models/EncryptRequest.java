@@ -2,22 +2,16 @@ package com.payfluent.encryptor.models;
 
 public class EncryptRequest {
 	
-	private String publicKey;
 	private String publicKeyExponent;
 	private String publicKeyModulus;
 	private String data; 
 
 	public EncryptRequest(){}
 
-	public EncryptRequest(String publicKey, String publicKeyExponent, String publicKeyModulus, String data){
-		this.publicKey = publicKey;
+	public EncryptRequest(String publicKeyExponent, String publicKeyModulus, String data){
 		this.publicKeyExponent = publicKeyExponent;
 		this.publicKeyModulus = publicKeyModulus;
 		this.data = data;
-	}
-
-	public String getPublicKey(){
-		return this.publicKey;
 	}
 
 	public String getPublicKeyExponent(){
@@ -31,9 +25,6 @@ public class EncryptRequest {
 		return this.data;
 	}
 
-	public void setPublicKey(String publicKey){
-		this.publicKey = publicKey;
-	}
 	public void setPublicKeyExponent(String exponent){
 
 		this.publicKeyExponent = exponent;

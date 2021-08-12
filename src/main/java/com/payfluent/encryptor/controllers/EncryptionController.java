@@ -13,7 +13,7 @@ import java.security.PublicKey;
 import java.security.Security;
 import java.security.spec.MGF1ParameterSpec;
 import java.security.spec.RSAPublicKeySpec;
-import java.security.spec.X509EncodedKeySpec;
+// import java.security.spec.X509EncodedKeySpec;
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.OAEPParameterSpec;
@@ -47,7 +47,6 @@ public class EncryptionController {
 			System.out.println(String.format("public key modulus: %s", encryptRequest.getPublicKeyModulus()));
 			System.out.println(String.format("public key exponent: %s", encryptRequest.getPublicKeyExponent()));
 			System.out.println(String.format("data: %s", encryptRequest.getData()));
-			System.out.println(String.format("public key: %s", encryptRequest.getPublicKey()));
 
 			PublicKey publicKey = generatePublicKey(encryptRequest.getPublicKeyModulus(),
 					encryptRequest.getPublicKeyExponent());
