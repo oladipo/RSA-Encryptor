@@ -1,4 +1,4 @@
-name: Master Branch
+name: Spring Boot CI
 on:
   push:
     branches:
