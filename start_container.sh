@@ -1,0 +1,1 @@
+docker run -itd --name=payfluent.encryptor -v $PWD:/opt/app springio/maven-base:latest

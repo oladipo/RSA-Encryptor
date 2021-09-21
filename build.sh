@@ -1,1 +1,1 @@
-docker build -t payfluent.encryptor .
+docker build -t oladipo/payfluent.encryptor .

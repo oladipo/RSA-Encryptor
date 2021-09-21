@@ -1,4 +1,4 @@
-/opt/app/payfluent-encryptor/src/main/java/com/payfluent/encryptor/ServletInitializer.java
-/opt/app/payfluent-encryptor/src/main/java/com/payfluent/encryptor/models/EncryptRequest.java
-/opt/app/payfluent-encryptor/src/main/java/com/payfluent/encryptor/EncryptorApplication.java
-/opt/app/payfluent-encryptor/src/main/java/com/payfluent/encryptor/controllers/EncryptionController.java
+/opt/app/src/main/java/com/payfluent/encryptor/ServletInitializer.java
+/opt/app/src/main/java/com/payfluent/encryptor/EncryptorApplication.java
+/opt/app/src/main/java/com/payfluent/encryptor/models/EncryptRequest.java
+/opt/app/src/main/java/com/payfluent/encryptor/controllers/EncryptionController.java
