@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.payfluent.encryptor.EncryptorApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 13.543 s - in com.payfluent.encryptor.EncryptorApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.937 s - in com.payfluent.encryptor.EncryptorApplicationTests

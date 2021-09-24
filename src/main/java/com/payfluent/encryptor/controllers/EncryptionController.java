@@ -13,7 +13,6 @@ import java.security.PublicKey;
 import java.security.Security;
 import java.security.spec.MGF1ParameterSpec;
 import java.security.spec.RSAPublicKeySpec;
-// import java.security.spec.X509EncodedKeySpec;
 import java.security.spec.X509EncodedKeySpec;
 
 import javax.crypto.Cipher;
@@ -35,14 +34,6 @@ public class EncryptionController {
 
 	@PostMapping("/")
 	public Map<String, String> create(@RequestBody EncryptRequest encryptRequest) {
-
-		// base64URLEncoded Public Key in ASN.1 format
-
-		// decode to Base64
-
-		// generate PEM file
-
-		// Encrypt with public key pem file with rsa...
 
 		return encryptUsingPublicKey(encryptRequest);
 	}
@@ -115,7 +106,6 @@ public class EncryptionController {
 				OAEPParameterSpec paramSpec = new OAEPParameterSpec("SHA-256", "MGF1", MGF1ParameterSpec.SHA256,
 						PSource.PSpecified.DEFAULT);
 				cipher.init(Cipher.ENCRYPT_MODE, keyPublic, paramSpec);
-				// cipher.init(Cipher.ENCRYPT_MODE, keyPublic);
 				byte[] abData = cipher.doFinal(p_sData.getBytes(StandardCharsets.UTF_8));
 
 				return encoder.encodeToString(abData);
@@ -130,15 +120,10 @@ public class EncryptionController {
 
 	public String base64UrlDecode(String base64URLString) {
 
-		// byte[] decodedURLBytes = Base64.getUrlDecoder().decode(base64URLString);
-
 		return base64URLString.replace('-', '+').replace('_', '/');
-
-		// return new String(decodedURLBytes, StandardCharsets.UTF_8);
 	}
 
 	public PublicKey generatePublicKeyFromBase64(String base64String) throws Exception {
-		// Base64 decode the data
 
 		byte[] encodedPublicKey = Base64.getDecoder().decode(base64String.getBytes());
 
